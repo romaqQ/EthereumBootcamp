@@ -35,7 +35,7 @@ function Wallet({ address, setAddress, account, setAccount, balance, setBalance,
         <select onChange={onChange} value={account}>
           <option value=""> Choose an account wallet </option>
           {Array.from(wallet.accounts.keys()).map((u,i) => (
-            <option key={i} value={u}>
+            <option key={i} value={u.hash}>
               {u}
             </option>
           ))
